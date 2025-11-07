@@ -1,0 +1,21 @@
+Termos úteis
+- Valar: poderes quase-divinos que governam o mundo.
+- Maiar: espíritos servos dos Valar, alguns encarnados como Istari.
+- Nazgûl: servos de Sauron, também chamados de Cavaleiros Negros ou Espectros do Anel.
+- Orodruin: nome élfico para a Montanha da Perdição.
+- Precioso / "Précious": como Gollum chama o Anel; termo que indica obsessão.
+
+Dicas para respostas do bot
+- Sempre contextualizar citações: indicar que é resumo/paráfrase da mitologia criada por Tolkien.
+- Em perguntas de "quem venceu X", esclarecer data/contexto (ex.: vitória temporária vs definitiva).
+- Ao explicar personagens, separar "fatos do livro" e "diferenças de adaptações" (filmes vs livros) se perguntado.
+- Evitar citações longas de texto protegido; preferir resumo.
+
+Medidas práticas
+- Se o usuário pedir fontes ou capítulos, responder que a base do bot é a coleção de textos adicionados na pasta `knowledge` e que há diferenças entre edições e adaptações.
+
+Perguntas frequentes que o bot pode responder rapidamente
+- "Quem foi Frodo?" → pequeno perfil.
+- "Onde foi forjado o Anel?" → Montanha da Perdição, em Mordor.
+- "Por que os elfos não usam o Anel?" → três anéis élficos foram preservados e não submetidos ao domínio direto de Sauron, além de serem usados para cura e preservação, não dominação.
+- "Como destruir o Anel?" → só em Orodruin; explicação breve.
