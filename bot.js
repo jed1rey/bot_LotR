@@ -18,9 +18,7 @@ const axios = require('axios')
 const fs = require('fs')
 const path = require('path')
 
-// ===========================
 // CONFIGURAÇÕES GERAIS
-// ===========================
 const lmstudioUrl = 'http://127.0.0.1:1234' // Endereço do LMStudio
 const conversationHistory = new Map()
 const KNOWLEDGE_FOLDER = path.join(__dirname, 'knowledge')
@@ -28,15 +26,15 @@ const KNOWLEDGE_FOLDER = path.join(__dirname, 'knowledge')
 // Apenas números autorizados podem falar com o bot
 const numerosAutorizados = [
   '5516992362793',
-  '5516994233352' // seu número (adicione outros se quiser)
+  '5516994233352' 
 ]
 
 console.log('🤖 Bot com LMStudio iniciando...')
 console.log(`📱 Autorizados: ${numerosAutorizados.join(', ')}\n`)
 
-// ===========================
+
 // CARREGAR BASE DE CONHECIMENTO
-// ===========================
+
 function carregarBaseConhecimento() {
   console.log('📚 Carregando base de conhecimento...')
   if (!fs.existsSync(KNOWLEDGE_FOLDER)) {
@@ -62,9 +60,9 @@ function carregarBaseConhecimento() {
 
 const conhecimento = carregarBaseConhecimento()
 
-// ===========================
+
 // CONECTAR AO WHATSAPP
-// ===========================
+
 async function connectToWhatsApp() {
   const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys')
 
@@ -76,9 +74,9 @@ async function connectToWhatsApp() {
 
   sock.ev.on('creds.update', saveCreds)
 
-  // ===========================
+  
   // ATUALIZAÇÃO DE CONEXÃO
-  // ===========================
+
   sock.ev.on('connection.update', (update) => {
     const { connection, lastDisconnect, qr } = update
 
@@ -106,9 +104,9 @@ async function connectToWhatsApp() {
     }
   })
 
-  // ===========================
+
   // RECEBENDO MENSAGENS
-  // ===========================
+
   sock.ev.on('messages.upsert', async ({ messages }) => {
     const msg = messages[0]
     if (!msg.message || msg.key.fromMe) return
@@ -180,7 +178,5 @@ async function connectToWhatsApp() {
   })
 }
 
-// ===========================
 // INICIAR BOT
-// ===========================
 connectToWhatsApp()
