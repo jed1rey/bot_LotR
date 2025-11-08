@@ -34,7 +34,7 @@ node bot.js
 
 5️⃣ Envie mensagens a partir do número autorizado para conversar com o bot.
 
-🧠 Funcionalidades
+## 🧠 Funcionalidades
 
 - Conecta automaticamente ao WhatsApp.
 - Suporta múltiplos arquivos de conhecimento em .txt ou .json.
