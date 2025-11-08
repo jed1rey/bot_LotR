@@ -31,9 +31,10 @@ openai/gpt-oss-20b
 node bot.js
 ```
 4️⃣ Escaneie o QR Code exibido no terminal com o WhatsApp do número autorizado.
+
 5️⃣ Envie mensagens a partir do número autorizado para conversar com o bot.
 
-##🧠 Funcionalidades
+🧠 Funcionalidades
 
 - Conecta automaticamente ao WhatsApp.
 - Suporta múltiplos arquivos de conhecimento em .txt ou .json.
