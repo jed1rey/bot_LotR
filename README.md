@@ -41,5 +41,6 @@ node bot.js
 - Mantém histórico de conversas.
 - Se reconecta automaticamente em caso de desconexão.
 
-Desenvolvido por Paula Cristina Abib Teixeira — Fatec Franca
-Disciplina: Processamento de Linguagem Natural (PLN)
+**Paula Cristina Abib Teixeira — Fatec Franca**
+
+**Disciplina: Processamento de Linguagem Natural (PLN)**
